@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 add_action('admin_menu', 'jpg_compression_options_menu');
 //creates a menu page with the following settings
 function jpg_compression_plugin_menu() {
-    add_submenu_page('upload.php', 'JPG Compression Options', 'JPG Compression Options', 'manage_options' 'jpg_compression_display_settings');
+    add_submenu_page('upload.php', 'JPG Compression Options', 'JPG Compression Options', 'manage_options', 'jpg_compression_display_settings');
 }
 
 add_filter('jpeg_quality', create_function('', 'return 100;'));
