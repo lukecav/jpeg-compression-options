@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: JPEG Compression Options
-Plugin URI:
+Plugin URI: https://github.com/lukecav/jpeg-compression-options/
 Description: Add options for JPEG compression in WordPress, which by default is 82.
 Version: 1.0
 Author: Luke Cavanagh
