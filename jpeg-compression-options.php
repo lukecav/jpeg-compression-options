@@ -102,7 +102,7 @@ if(get_option(jpg_compression) == 'jpg_medium_compression') {
 
 echo "/></td>
 <td><p>This will set the compression at 80.</p></td>
-        </tr></table>
+        </tr>
 	
 	<tr valign=\"top\">
         <th scope=\"row\">Low Compression</th>
