@@ -34,6 +34,7 @@ function jpg_compression_browse_settings() {
 //sets default if no option is set
 if (!get_option('jpg_compression')) {
        update_option('jpg_compression','jpg_low_compression');
+       break;
 }
 
 //pulls the option value to use in case statement
