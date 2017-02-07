@@ -31,11 +31,6 @@ function jpg_compression_browse_settings() {
     register_setting( 'jpg_compression_display_settings-group', 'jpg_compression' );
 }
 
-//sets default if no option is set
-if (!get_option('jpg_compression')) {
-       update_option('jpg_compression','jpg_low_compression');
-}
-
 //pulls the option value to use in case statement
 $jpg_compression = get_option('jpg_compression');
 
@@ -97,7 +92,7 @@ echo "/></td>
 <td><p>This will set the compression at 70.</p></td>
         </tr>
 		
-	 <tr valign=\"top\">
+	<tr valign=\"top\">
         <th scope=\"row\">Medium Compression</th>
         <td><input type=\"radio\" name=\"jpg_compression\" value=\"jpg_medium_compression\" ";
 
