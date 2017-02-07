@@ -18,9 +18,9 @@ function jpg_compression_options_menu() {
 }
 
 //creates a plugin action link for the JPG compression options
-add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'my_plugin_action_links' );
+add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'jpeg_plugin_action_links' );
 
-function my_plugin_action_links( $links ) {
+function jpeg_plugin_action_links( $links ) {
    $links[] = '<a href="'. esc_url( get_admin_url(null, 'upload.php?page=jpg_compression_browse_settings') ) .'">Settings</a>';
    return $links;
 }
